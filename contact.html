@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Name</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="js/mobile.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div id="header">
+	<a href="index.html" class="logo">
+		<h1 style="color: #0f6674">
+			Exercises
+		</h1>
+
+	</a>
+	<ul id="navigation">
+		<li  >
+			<a href="index.html">Main</a>
+		</li>
+		<li>
+			<a href="terms.html">Terms and conditions</a>
+		</li>
+		<li>
+			<a href="policy.html">Privacy policy</a>
+		</li>
+		<li >
+			<a href="blog.html">Articles</a>
+		</li>
+		<li class="selected" >
+			<a href="contact.html">Contacts</a>
+		</li>
+	</ul>
+</div>
+	<div id="body">
+		<h1><span>Contacts</span></h1>
+		<form action="thanks.html" method="post">
+			<input type="text" name="fname" id="fname" placeholder="Name">
+
+			<input type="text" name="email" id="email" placeholder="Email">
+			<input type="text" name="phone" id="phone" placeholder="Phone number">
+			<textarea name="message" id="message"></textarea>
+			<input style="width: 40px" type="checkbox" name="terms" value="check" required=""/>
+			<a href="policy.html" target="_blank">
+				I have read and agree to the terms of the user agreement
+			</a>
+			<input style="margin-left: 30px;"  type="submit" name="send" id="send" placeholder="Send">
+		</form>
+	</div>
+	<div id="footer">
+		<div>
+			<p> Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+				All rights reserved</p>
+			<ul>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
+				</li>
+				<li>
+					<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
+				</li>
+				<li>
+					<a href="http://pinterest.com/fwtemplates/" id="pinterest">pinterest</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='cookie-banner'>
+		<p>
+			The site uses cookies. They allow us to recognize you and get information about your user experience.By continuing to browse the site, I agree to the use of cookies by the site owner in accordance with  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie policy</a>
+		</p>
+		<button class='close-cookie'>&times;</button>
+	</div>
+	<script>
+		window.onload = function () {
+			$('.close-cookie').click(function () {
+				$('.cookie-banner').fadeOut();
+			})
+		}
+	</script>
+	<script>
+		let elems = document.querySelectorAll('.server-name');
+		elems.forEach((elem) => {
+			elem.innerHTML = window.location.hostname
+		})
+	</script>
+</body>
+</html>

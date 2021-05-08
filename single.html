@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Article</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="js/mobile.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div id="header">
+	<a href="index.html" class="logo">
+		<h1 style="color: #0f6674">
+			Health
+		</h1>
+
+	</a>
+	<ul id="navigation">
+		<li class="selected">
+			<a href="index.html">Main</a>
+		</li>
+		<li>
+			<a href="terms.html">Terms and conditions</a>
+		</li>
+		<li>
+			<a href="policy.html">Privacy policy</a>
+		</li>
+		<li>
+			<a href="blog.html">Articles</a>
+		</li>
+		<li>
+			<a href="contact.html">Contacts</a>
+		</li>
+	</ul>
+</div>
+<div id="body">
+	<h1><span>Article</span></h1>
+	<div>
+		<img style="width: 100%" src="./assets/images/chase-kinney-fmqblyhd2hu-unsplash.jpg" alt="">
+		<div class="article">
+			<h2>House of cards-an investigation into the cards that make up the National Team.</h2>
+			<p>
+				<strong>House of cards-an investigation into the cards that make up the National Team.</strong> The House of cards is an organization dedicated to the study and training of bodybuilding. The aim of the house is to promote and defend the integrity of the sport, insure an unbiased evaluation of all the main figures of the sport, and to provide useful information to the management team. The house organizes competitions, provides training, and helps to choose the best representatives of each national team. The objective of the house is to develop and spread the knowledge of its members among friends. house.houseofcards.com The house of cards is an international network of fitness clubs and studios. the network. The heart of the network is located in the United States, and the members, guests of the network include sports advertisers, television networks, and the hotels. houseofcards.com
+			</p>
+
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div>
+		<p> Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+			All rights reserved</p>
+		<ul>
+			<li>
+				<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+			</li>
+			<li>
+				<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
+			</li>
+			<li>
+				<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
+			</li>
+			<li>
+				<a href="http://pinterest.com/fwtemplates/" id="pinterest">pinterest</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class='cookie-banner'>
+	<p>
+		The site uses cookies. They allow us to recognize you and get information about your user experience.By continuing to browse the site, I agree to the use of cookies by the site owner in accordance with  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie policy</a>
+	</p>
+	<button class='close-cookie'>&times;</button>
+</div>
+<script>
+	window.onload = function () {
+		$('.close-cookie').click(function () {
+			$('.cookie-banner').fadeOut();
+		})
+	}
+</script>
+<script>
+	let elems = document.querySelectorAll('.server-name');
+	elems.forEach((elem) => {
+		elem.innerHTML = window.location.hostname
+	})
+</script>
+</body>
+</html>
